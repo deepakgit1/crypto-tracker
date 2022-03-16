@@ -20,7 +20,7 @@ const CoinPage = () => {
     const { data } = await axios.get(SingleCoin(id));
     setCoin(data);
   };
-  console.log(coin);
+  // console.log(coin);
 
   useEffect(() => {
     fetchCoin();
@@ -202,7 +202,8 @@ const CoinPage = () => {
               style={{
                 width: "100%",
                 height: 40,
-                backgroundColor: inWatchlist?"#ff0000" : "#EEBC1D",
+                color:"white",
+                backgroundColor: inWatchlist?"#ff0000" : "#0BC9FF",
               }}
               onClick={inWatchlist? removeFromWatchlist : addToWatchlist}
               >

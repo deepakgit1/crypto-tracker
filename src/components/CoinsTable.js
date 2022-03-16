@@ -20,7 +20,7 @@ const CoinsTable = () => {
 
     const { currency, symbol,coins,loading,fetchCoins } = CryptoState();
 
-    console.log(coins);
+    // console.log(coins);
     useEffect(() => {
         fetchCoins()
     }, [currency])
@@ -53,7 +53,7 @@ const CoinsTable = () => {
           },
           pagination: {
             "& .MuiPaginationItem-root": {
-              color: "gold",
+              color: "#fff",
             },
           },
     }))
@@ -79,7 +79,7 @@ const CoinsTable = () => {
                             <LinearProgress style={{ backgroundColor: "gold" }} />
                         ) : (
                             <Table>
-                                <TableHead style={{ backgroundColor: "#EEBC1D" }}>
+                                <TableHead style={{ backgroundColor: "#0BC9FF" }}>
                                     <TableRow>
                                         {["Coin", "Price", "24h Change", "Market Cap"].map((head) => (
                                             <TableCell

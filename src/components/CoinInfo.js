@@ -42,7 +42,7 @@ const CoinInfo = ({ coin }) => {
         setHistoricData(data.prices);
     };
 
-    console.log(historicData);
+    // console.log(historicData);
 
     useEffect(() => {
         fetchHistoricData();
@@ -63,7 +63,7 @@ const CoinInfo = ({ coin }) => {
             <div className={classes.container}>
                 {!historicData | flag === false ? (
                     <CircularProgress
-                        style={{ color:"gold" }}
+                        style={{ color:"#0BC9FF" }}
                         size={250}
                         thickness={1}
                     />
@@ -84,7 +84,7 @@ const CoinInfo = ({ coin }) => {
                                     {
                                         data: historicData.map((coin) => coin[1]),
                                         label: `Price ( Past ${days} Days ) in ${currency}`,
-                                        borderColor: "#EEBC1D",
+                                        borderColor: "#0BC9FF",
                                     },
                                 ],
                             }}

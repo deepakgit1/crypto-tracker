@@ -29,20 +29,21 @@ const useStyles = makeStyles({
     logout: {
         height: "8%",
         width: "100%",
-        backgroundColor: "#EEBC1D",
+        color:"#4F5151",
+        backgroundColor: "#02ffe2",
         marginTop: 20,
     },
     picture: {
         width: 200,
         height: 200,
         cursor: "pointer",
-        backgroundColor: "#EEBC1D",
+        backgroundColor: "#02ffe2",
         objectFit: "contain",
     },
     watchlist: {
         flex: 1,
         width: "100%",
-        backgroundColor: "grey",
+        backgroundColor: "#AABFC0 ",
         borderRadius: 10,
         padding: 15,
         paddingTop: 10,
@@ -50,7 +51,14 @@ const useStyles = makeStyles({
         flexDirection: "column",
         alignItems: "center",
         gap: 12,
-        overflowY: "scroll",
+        overflow: "scroll",
+        '&::-webkit-scrollbar': {
+            backgroundColor: "#0BC9FF",
+            width: "0.2rem",
+            height:"0rem",
+            // borderRadius: "1rem",
+           },
+        fontFamily:"cursive"
     },
     coin: {
         padding: 10,
@@ -60,7 +68,7 @@ const useStyles = makeStyles({
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        backgroundColor: "#EEBC1D",
+        backgroundColor: "#02ffe2",
         boxShadow: "0 0 3px black",
       },
 });
@@ -129,7 +137,7 @@ export default function UserSidebar() {
                             height: 38,
                             width: 38,
                             cursor: "pointer",
-                            backgroundColor: "#EEBC1D",
+                            backgroundColor: "#02ffe2",
                         }}
                         src={user.photoURL}
                         alt={user.displayName || user.email}

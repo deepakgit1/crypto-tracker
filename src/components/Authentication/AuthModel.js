@@ -81,7 +81,7 @@ export default function AuthModel() {
     style={{
         width: 85,
           height: 40,
-          backgroundColor: "#EEBC1D",
+          backgroundColor: "#0BC9FF",
     }}
     onClick={handleOpen}
     >Login</Button>

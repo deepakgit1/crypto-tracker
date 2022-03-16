@@ -28,7 +28,7 @@ const CryptoContext = ({children}) => {
 
            var unsubscribe =  onSnapshot(coinRef,coin=>{
                 if(coin.exists()){
-                    console.log(coin.data().coins);
+                    // console.log(coin.data().coins);
                     setWatchlist(coin.data().coins)
                 }else{
                     console.log("Watchlist is Empty");
@@ -45,7 +45,7 @@ const CryptoContext = ({children}) => {
             onAuthStateChanged(auth,user=>{
                 if(user) setUser(user);
                 else setUser(null);
-                console.log(user);
+                // console.log(user);
 
             })
         },[])
